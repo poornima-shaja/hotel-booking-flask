@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dashboard</title>
+    
+  </head>
+  <body>
+    <h1>Welcome back admin</h1>
+
+  <h3>CONTACTS</h3>
+
+
+      <table class='table'>
+        <table border="5" width="100%">
+        <thead>
+          
+        <tr>
+          <th>sno</th>
+          <th>name</th>
+          <th>email</th>
+          <th>whatsup_no</th>
+          <th>subject</th>
+          <th>date</th>
+        </tr>
+      
+      </thead>
+      <tbody>
+      {% for cont in contact %}
+        <tr>
+          <td>{{cont.sno}}</td>
+          <td>{{cont.name}}</td>
+          <td>{{cont.email}}</td>
+          <td>{{cont.whatsup_no}}</td>
+          <td>{{cont.subject}}</td>
+          <td>{{cont.date}}</td>
+        </tr>
+       {% endfor %}
+      </tbody>
+      </table>
+
+
+
+      <h3>REGISTERATION AND LOGIN</h3>
+
+
+      <table class='table'>
+        <table border="5" width="100%">
+        <thead>
+          
+        <tr>
+          <th>sno</th>
+          <th>name</th>
+          <th>email</th>
+          <th>password</th>
+          <th>repeat password</th>
+          <th>date</th>
+        </tr>
+      
+      </thead>
+      <tbody>
+      {% for acc in account %}
+        <tr>
+          <td>{{acc.sno}}</td>
+          <td>{{acc.name}}</td>
+          <td>{{acc.email}}</td>
+          <td>{{acc.password}}</td>
+          <td>{{acc.confirm}}</td>
+          <td>{{acc.date}}</td>
+        </tr>
+       {% endfor %}
+      </tbody>
+      </table>
+
+
+
+      <h3>PAYMENT DETAILS</h3>
+
+
+      <table class='table'>
+        <table border="5" width="100%">
+        <thead>
+          
+        <tr>
+          <th>sno</th>
+          <th>name</th>
+          <th>email</th>
+          <th>check_in</th>
+          <th>check_out</th>
+          <th>city</th>
+          <th>room_type</th>
+          <th>name_on_card</th>
+          <th>credit_no</th>
+          <th>exp_month</th>
+          <th>exp_year</th>
+          <th>cvv</th>
+          <th>date</th>
+        </tr>
+      
+      </thead>
+      <tbody>
+      {% for pay in payment %}
+        <tr>
+          <td>{{pay.sno}}</td>
+          <td>{{pay.name}}</td>
+          <td>{{pay.email}}</td>
+          <td>{{pay.check_in}}</td>
+          <td>{{pay.check_out}}</td>
+          <td>{{pay.city}}</td>
+          <td>{{pay.room_type}}</td>
+          <td>{{pay.name_on_card}}</td>
+          <td>{{pay.credit_no}}</td>
+          <td>{{pay.exp_month}}</td>
+          <td>{{pay.exp_year}}</td>
+          <td>{{pay.cvv}}</td>
+          <td>{{pay.date}}</td>
+        </tr>
+       {% endfor %}
+      </tbody>
+      </table>
+    
+</body>
+</html>

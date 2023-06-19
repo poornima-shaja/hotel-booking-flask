@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  text-align: left;
+  
+  margin: 0;
+}
+
+html {
+
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h2{
+    text-align: center;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  padding: 0 16px;
+  height: 200px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color:white;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Free Wi-Fi. Long stays. Near major attractions. Spacious and comfortable rooms</p>
+  <p>Clean, high-quality beds and mattresses make the room feel welcoming and guests prefer hygiene too</p>
+</div>
+
+<h2 style="text-align:center"></h2>
+<div class="row">
+ 
+
+  <div class="column">
+    <div class="card">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/45612643.jpg?k=6322e5d1064d7af8a2be55d9102ae1c2384bf32f5bf2b821ed2d1815781436c5&o=&hp=1" alt="pooja" style="width:80%">
+      <div class="container"><br>
+        <h2>Poorni Hotel</h2>
+        
+     
+        <p>poornimanadar1234@gmail</p>
+      </div>
+    </div>
+  </div>
+  
+ 
+</div>
+
+</body>
+</html>
+{% endblock %}
+
+

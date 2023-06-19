@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@500;600&display=swap');
+:root{
+ --green:#27ae60;
+ --black:#192a56;
+ --light-color:#666;
+ --box-shadow:0.5rem 1.5rem rgba(0,0,0,.1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: 'Nunito',sans-serif;
+}
+html{
+    font-size: 63.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+.sub-heading{
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+.section{
+    padding: 2rem 9%;
+}
+.btn{
+    margin-top: .1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: white;
+    background: var(--black);
+    border-radius: .4rem;
+    cursor: pointer;
+    padding: .8rem 3rem
+} 
+.btn:hover{
+background: var(--green);
+letter-spacing: .1rem;
+} 
+.heading{
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+.Popular .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(27rem ,1fr));
+    gap: 1.5rem;
+}
+.Popular .box-container .box{
+    padding: 2.5rem;
+    background: white;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.Popular .box-container .box .fa-heart,
+.Popular .box-container .box .fa-eye{
+position: absolute;
+top: 1.5;
+background: #eee;
+border-radius: 50%;
+height: 5rem;
+width: 5rem;
+line-height: 5rem;
+font-size: 2rem;
+color: var(--black);
+}
+.Popular .box-container .box .fa-heart:hover,
+.Popular .box-container .box .fa-eye:hover{
+    background: var(--green);
+    color: #fff;
+}
+.Popular .box-container .box .fa-heart{
+    right: -15rem;
+}
+.Popular .box-container .box .fa-eye{
+    left: -15rem;
+}
+.Popular .box-container .box:hover .fa-heart{
+    right: 1.5rem;
+}
+.Popular .box-container .box:hover .fa-eye{
+    left: 1.5rem;
+}
+.popular .box-container .box img{
+    height: 17rem;
+    margin: 1rem 0;
+}
+.Popular .box-container .box:hover img:hover{
+    color:#ffffff;
+    outline: .2rem solid #222;
+    transform: scale(.9);
+}
+.Popular .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+.Popular .box-container .box .stars{
+    padding:  1rem 0;
+}
+.Popular .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: var(--green);
+}
+.Popular .box-container .box span{
+    color: var(--black);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+.Popular .box-container .box img{
+    height: auto;
+    width:100% ;
+}
